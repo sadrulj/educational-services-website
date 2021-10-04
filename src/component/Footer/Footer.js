@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
 const Footer = () => {
@@ -7,10 +8,11 @@ const Footer = () => {
       <div class="container">
         <div class="row">
           <div class="col-lg-5 col-xs-12 about-company">
-            <h2>Heading</h2>
+            <h2>EDx.edu</h2>
             <p class="pr-5 text-white-50">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac
-              ante mollis quam tristique convallis{" "}
+              Online yellow-shapeTutorial From Top Instructor. Meet
+              university,and cultural institutions, who'll share their
+              experience.{" "}
             </p>
             <p>
               <a href="#facebook">
@@ -25,28 +27,30 @@ const Footer = () => {
             <h4 class="mt-lg-0 mt-sm-3">Links</h4>
             <ul class="m-0 p-0">
               <li>
-                - <a href="#lo">Lorem ipsum</a>
+                <Link to="/home" className="nav-link">
+                  Home
+                </Link>
               </li>
               <li>
-                - <a href="#nam">Nam mauris velit</a>
+                <Link to="/services" className="nav-link">
+                  Service
+                </Link>
               </li>
               <li>
-                - <a href="#eti">Etiam vitae mauris</a>
+                <Link to="/about" className="nav-link">
+                  About us
+                </Link>
               </li>
               <li>
-                - <a href="#fus">Fusce scelerisque</a>
-              </li>
-              <li>
-                - <a href="#sed">Sed faucibus</a>
-              </li>
-              <li>
-                - <a href="#mas">Mauris efficitur nulla</a>
+                <Link to="/teachers" className="nav-link">
+                  Teacher
+                </Link>
               </li>
             </ul>
           </div>
           <div class="col-lg-4 col-xs-12 location">
             <h4 class="mt-lg-0 mt-sm-4">Location</h4>
-            <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
+            <p>22, Dhaka, Bangladesh</p>
             <p class="mb-0">
               <i class="fa fa-phone mr-3"></i>(541) 754-3010
             </p>
