@@ -16,7 +16,12 @@ const Services = () => {
   return (
     <div>
       <h2 className="text-start ms-5 mt-5">Our Popular Courses</h2>
-      <Row xs={1} md={3} className="container shadow rounded mx-auto my-4 g-4">
+      <Row
+        xs={1}
+        md={2}
+        lg={3}
+        className="container shadow rounded mx-auto my-4 g-4"
+      >
         {dataInfo.map((data) => (
           <Service key={data.id} data={data}></Service>
         ))}

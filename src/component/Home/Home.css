@@ -2,7 +2,15 @@
   display: grid;
   grid-template-columns: 3fr 1fr;
 }
-.img {
-  transition: all 0.3s ease-out 0s;
-  cursor: pointer;
+@media screen and (min-width: 768px) {
+  .box-container {
+    display: grid;
+    grid-template-columns: 3fr 0fr;
+  }
+}
+@media screen and (min-width: 375px) {
+  .box-container {
+    display: grid;
+    grid-template-columns: 3fr 0fr;
+  }
 }

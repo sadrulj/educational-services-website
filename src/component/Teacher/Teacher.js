@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Col, Row } from "react-bootstrap";
+import { Card, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookSquare,
@@ -18,9 +18,8 @@ const Teacher = (props) => {
       <Col>
         <Card className="p-3">
           <Card.Img
-            className="mx-auto"
+            className="md:mx-auto"
             variant="top"
-            style={{ width: "400px" }}
             src={imageInstructer}
           />
           <Card.Body className="shadow">

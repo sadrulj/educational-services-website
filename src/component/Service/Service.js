@@ -1,5 +1,5 @@
 import React from "react";
-import { Badge, Card, Col, Row } from "react-bootstrap";
+import { Badge, Card, Col } from "react-bootstrap";
 
 const service = (props) => {
   const { badge, image, lesson, title, imageInstructer, instructer, price } =
@@ -7,13 +7,13 @@ const service = (props) => {
   return (
     <Col>
       <Card className="shadow mb-4">
-        <Card.Img variant="top" style={{ height: "220px" }} src={image} />
+        <Card.Img variant="top" style={{ height: "200px" }} src={image} />
         <Card.ImgOverlay>
           <div className="d-flex justify-content-start">
             <Badge bg="warning">{badge}</Badge>{" "}
           </div>
         </Card.ImgOverlay>
-        <Card.Body className="text-start">
+        <Card.Body className="text-start my-3">
           <Card.Title>{lesson} Lesson</Card.Title>
           <Card.Title>{title}</Card.Title>
           <Card.Text className="d-flex justify-content-start">

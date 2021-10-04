@@ -2,8 +2,9 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import Service from "../Service/Service";
-import { Badge, Card, CardGroup, InputGroup, Row } from "react-bootstrap";
+import { Card, Row } from "react-bootstrap";
 import "./Home.css";
+import Aside from "../Aside/Aside";
 
 const Home = () => {
   const [dataInfo, setDataInfo] = useState([]);
@@ -40,69 +41,22 @@ const Home = () => {
           </Card.Text>
         </Card.ImgOverlay>
       </Card>
-      <h1 className="text-start ms-5 mt-3">Our Populer Courses</h1>
-      <div className="container box-container shadow rounded p-3 mt-5 mx-auto">
-        <Row
-          xs={1}
-          md={3}
-          className="container shadow rounded mx-auto my-4 g-4"
-        >
-          {dataInfo.map((data) => (
-            <Service key={data.id} data={data}></Service>
-          ))}
-        </Row>
-        <div className="my-3 ms-5 d-none d-sm-none d-md-none d-lg-block">
-          <Card border="primary" style={{ width: "18rem" }}>
-            <Card.Header>Categories</Card.Header>
-            <Card.Body>
-              <Card.Text>
-                <InputGroup className="mb-3">
-                  <InputGroup.Checkbox aria-label="Checkbox for following text input" />
-                  <h5 className="ms-3">English(6)</h5>
-                </InputGroup>
-                <InputGroup className="mb-3">
-                  <InputGroup.Checkbox aria-label="Checkbox for following text input" />
-                  <h5 className="ms-3">Education(8)</h5>
-                </InputGroup>
-                <InputGroup className="mb-3">
-                  <InputGroup.Checkbox aria-label="Checkbox for following text input" />
-                  <h5 className="ms-3">Business(5)</h5>
-                </InputGroup>
-                <InputGroup className="mb-3">
-                  <InputGroup.Checkbox aria-label="Checkbox for following text input" />
-                  <h5 className="ms-3">UX Design(3)</h5>
-                </InputGroup>
-                <InputGroup className="mb-3">
-                  <InputGroup.Checkbox aria-label="Checkbox for following text input" />
-                  <h5 className="ms-3">Mathematics(3)</h5>
-                </InputGroup>
-              </Card.Text>
-            </Card.Body>
-          </Card>
-          <br />
-          <Card border="primary" style={{ width: "18rem" }}>
-            <Card.Header>Language</Card.Header>
-            <Card.Body>
-              <Card.Text>
-                <InputGroup className="mb-3">
-                  <InputGroup.Checkbox aria-label="Checkbox for following text input" />
-                  <h5 className="ms-3">English</h5>
-                </InputGroup>
-                <InputGroup className="mb-3">
-                  <InputGroup.Checkbox aria-label="Checkbox for following text input" />
-                  <h5 className="ms-3">Bangla</h5>
-                </InputGroup>
-                <InputGroup className="mb-3">
-                  <InputGroup.Checkbox aria-label="Checkbox for following text input" />
-                  <h5 className="ms-3">Franch</h5>
-                </InputGroup>
-                <InputGroup className="mb-3">
-                  <InputGroup.Checkbox aria-label="Checkbox for following text input" />
-                  <h5 className="ms-3">Arabic</h5>
-                </InputGroup>
-              </Card.Text>
-            </Card.Body>
-          </Card>
+      <h1 className="text-start ms-3 mt-3">Our Populer Courses</h1>
+      <div className="box-container">
+        <div className="container shadow rounded p-3 mt-3 mx-auto">
+          <Row
+            xs={1}
+            md={2}
+            lg={3}
+            className="container shadow rounded mx-auto my-4 g-4"
+          >
+            {dataInfo.map((data) => (
+              <Service key={data.id} data={data}></Service>
+            ))}
+          </Row>
+        </div>
+        <div className="my-3 mx-3 d-none d-sm-none d-md-none d-lg-block">
+          <Aside></Aside>
         </div>
       </div>
     </div>
