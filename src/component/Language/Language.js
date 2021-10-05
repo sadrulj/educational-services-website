@@ -1,16 +1,16 @@
 import React from "react";
-import { Card, InputGroup } from "react-bootstrap";
+import { InputGroup } from "react-bootstrap";
 
-const Aside = (props) => {
-  const { badge } = props.data;
+const Language = (props) => {
+  const { lang } = props.lan;
   return (
     <div>
       <InputGroup className="mb-3">
         <InputGroup.Checkbox aria-label="Checkbox for following text input" />
-        <h5 className="ms-3">{badge}</h5>
+        <h5 className="ms-3">{lang}</h5>
       </InputGroup>
     </div>
   );
 };
 
-export default Aside;
+export default Language;

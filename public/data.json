@@ -1,4 +1,5 @@
-[
+{
+  "data": [
     {
       "id": 1,
       "badge": "Arts & Design",
@@ -59,7 +60,7 @@
       "badge": "Audio & Music",
       "image": "https://themepure.net/template/educal/educal/assets/img/course/course-5.jpg",
       "lesson": 18,
-      "rating": 4.0,
+      "rating": 4,
       "title": "Build your media and Public presence online",
       "instructer": "Pelican Steve",
       "imageInstructer": "https://themepure.net/template/educal/educal/assets/img/course/teacher/teacher-5.jpg",
@@ -67,7 +68,7 @@
     },
     {
       "id": 7,
-      "badge": "Programming Language",
+      "badge": "Programming",
       "image": "https://themepure.net/template/educal/educal/assets/img/course/course-6.jpg",
       "lesson": 43,
       "rating": 4.4,
@@ -78,7 +79,7 @@
     },
     {
       "id": 8,
-      "badge": "Web Development",
+      "badge": "WebDevelopment",
       "image": "https://photodune.img.customer.envatousercontent.com/files%2F345539701%2FMG_0035.jpg?w=600&fit=max&mark=https%3A%2F%2Fassets.shopfront.envato-static.com%2Fimages%2Fwatermarks-19012018.png&markalign=top%2Cleft&markpad=0&markfit=crop&fm=pjpg&q=40&s=c7f76f694d6cd9e5182cf499d23a81e5",
       "lesson": 60,
       "rating": 4.4,
@@ -92,7 +93,7 @@
       "badge": "Web Design",
       "image": "https://photodune.img.customer.envatousercontent.com/files%2F328552479%2F320397408.jpg?w=600&fit=max&mark=https%3A%2F%2Fassets.shopfront.envato-static.com%2Fimages%2Fwatermarks-19012018.png&markalign=top%2Cleft&markpad=0&markfit=crop&fm=pjpg&q=40&s=58a05504e9c702d5ab80a8c4549cba90",
       "lesson": 43,
-      "rating": 4.0,
+      "rating": 4,
       "title": "view of designer holding website design template near gadgets",
       "instructer": "LightFieldStudios",
       "imageInstructer": "https://themepure.net/template/educal/educal/assets/img/course/teacher/teacher-7.jpg",
@@ -131,5 +132,28 @@
       "imageInstructer": "https://themepure.net/template/educal/educal/assets/img/course/teacher/teacher-7.jpg",
       "price": 30
     }
+  ],
+  "language": [
+    {
+      "id":1,
+      "lang": "English"
+    },
+    {
+      "id":2,
+        "lang": "Franch"
+    },
+    {
+      "id":3,
+        "lang": "Bangla"
+    },
+    {
+      "id":4,
+        "lang": "Arabic"
+    },
+    {
+      "id":5,
+        "lang": "Spanish"
+    }
+      
   ]
-  
+}

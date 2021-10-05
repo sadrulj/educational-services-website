@@ -10,7 +10,7 @@ const Services = () => {
   useEffect(() => {
     fetch("./data.json")
       .then((res) => res.json())
-      .then((data) => setDataInfo(data));
+      .then((data) => setDataInfo(data.data));
   }, []);
 
   return (
