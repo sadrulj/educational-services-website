@@ -8,11 +8,10 @@ const Header = () => {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand
-          style={{ fontSize: "24px", fontWeight: "800" }}
-          href="#home"
-        >
-          EDx.edu
+        <Navbar.Brand style={{ fontSize: "24px", fontWeight: "800" }}>
+          <Link to="/home" className="nav-link text-white">
+            EDx.edu
+          </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -31,7 +30,9 @@ const Header = () => {
             </Link>
           </Nav>
           <Nav>
-            <FontAwesomeIcon icon="user" size="lg" inverse />
+            <Link to="/user">
+              <FontAwesomeIcon icon="user" size="lg" inverse />
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
